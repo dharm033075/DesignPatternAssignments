@@ -1,14 +1,15 @@
 Q.1 java.lang.System#getSecurityManager() 
 Ans 1 Singleton design pattern used. Here security manger object is not created directly(noWhere new 
-securitymanager() used for creating object).By using getsecuritymanager() method security manager 
+securitymanager() used for creating object in System Class).By using getsecuritymanager() method security manager 
 object created. And every where this single or only one object used as global.  These are the specification
 of singleton design pattern. 
 
 Q.2 java.text.NumberFormat#getInstance() 
 Ans 2 Factory design pattern used. Here getinstance()  method is used for getting the number format object.
-This method returns the different type of objects based on the locale parameter. This locale is used in 
+This method returns the different type of objects based on the locale parameter. This locale parameter is used in 
 getinstance() method to get default locale number format based on the differ region. So It's giving the different 
-objects based on the different locale of regions. This is similar behaviour to factory design pattern.
+number format objects based on the regions. This is similar behaviour to factory design pattern(providing an interface
+to create object of similar super class type with varying input).
 
 Q.3 java.lang.reflect.Proxy
 Ans3. Similar to Proxy design Pattern. Proxy design pattern provide a proxy object to client so instead of using 
