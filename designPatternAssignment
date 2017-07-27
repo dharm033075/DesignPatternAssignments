@@ -1,0 +1,7 @@
+Ans 1 Singleton design pattern used. Here security manger object is not created directly. By using getsecuritymanager() method security manager object created.  And every where this singe or only one object used as global.  These are the specification of singleton design pattern. 
+
+Ans 2 Factory design pattern used. Here getinstance()  method is used for getting the number format object.This method returns the different type of objects based on the locale parameter. This locale is used in getinstance() method to get default locale number format based on the differ region. So It's giving the different objects based on the different locale of regions. This is similar behaviour to factory design pattern.
+
+Ans3. Similar to Proxy design Pattern. Proxy design pattern provide a proxy object to client so instead of using actual class, client uses the proxy object. Here first implementing the invocationHandler interface which create the proxy object of actual class. invocationhandler interface have simple only one method inovke, which take input proxy object to be proxied, Method which to be invoked and array of argument that method is taking as input.
+So by creating this proxy object of proxy class (proxy class can implement many interface)  client won't have any indication of the actual class.   
+
